@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desastres Fabulosos</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="lyrics">
+
+    <!-- SPANISH VERSION  -->
+    <div class="lang lang-es">
+      <p>
+        Te <span class="w-volviste">volviste</span>
+        a <span class="w-llevar">llevar</span>
+        mis <span class="w-llaves">llaves</span>,
+        mi <span class="w-amor">amor</span>
+      </p>
+
+      <p>
+        <span class="w-vuelta">Y aquí estoy de vuelta</span>,
+        <span class="w-encerrado">encerrado</span> en casa
+      </p>
+
+      <p>
+        <span class="balcon">
+          <span>Miro</span>
+          <span>abajo</span>
+          <span>esperando</span>
+          <span>desde</span>
+          <span>el</span>
+          <span>balcón</span>
+        </span>
+      </p>
+
+      <p class="wave">
+        <span>A</span>
+        <span>que</span>
+        <span>vuelvas</span>
+        <span>como</span>
+        <span>cada</span>
+        <span>vez</span>
+        <span>que</span>
+        <span>pasa</span>
+      </p>
+
+      <p>
+        En esos momentos
+        <span class="w-amo-odio">te amo, te odio</span>
+      </p>
+
+      <p class="iguales">
+        <span class="left">por partes</span>
+        <span class="right">iguales</span>
+      </p>
+
+      <p>
+        Llenaste mi vida de
+        <span class="w-hermosos">hermosos</span>
+        <span class="w-desastres">desastres naturales</span>
+      </p>
+    </div>
+
+    <!--ENGLISH VERSION-->
+    <div class="lang lang-en" hidden>
+      <p>
+        <span class="w-volviste">Once again</span> you
+        <span class="w-llevar">took</span> my
+        <span class="w-llaves">keys,</span>
+        <span class="w-amor">love</span>
+      </p>
+
+      <p>
+        <span class="w-vuelta">And here I am again</span>
+        <span class="w-encerrado">locked</span> inside at home
+      </p>
+
+      <p>
+        <span class="balcon">
+          <span>I</span>
+          <span>look</span>
+          <span>down</span>
+          <span>waiting</span>
+          <span>from</span>
+          <span>the</span>
+          <span>balcony</span>
+        </span>
+      </p>
+
+      <p class="wave">
+        <span>That</span>
+        <span>you</span>
+        <span>get</span>
+        <span>home</span>
+        <span>like</span>
+        <span>every</span>
+        <span>time</span>
+        <span>it</span>
+        <span>happens</span>
+      </p>
+
+      <p>
+        In those moments
+        <span class="w-amo-odio">I love you, I hate you</span>
+      </p>
+
+      <p class="iguales">
+        <span class="left">in equal</span>
+        <span class="right">parts</span>
+      </p>
+
+      <p>
+        You filled my life with
+        <span class="w-hermosos">beautiful</span>
+        <span class="w-desastres">natural disasters</span>
+      </p>
+    </div>
+
+    <!-- BUTTON -->
+    <button id="toggleLang" type="button">Read in English</button>
+
+  </div>
+
+  <script>
+    const btn = document.getElementById("toggleLang");
+    const es = document.querySelector(".lang-es");
+    const en = document.querySelector(".lang-en");
+
+    btn.addEventListener("click", () => {
+      const showingSpanish = !es.hasAttribute("hidden");
+
+      if (showingSpanish) {
+        es.setAttribute("hidden", "");
+        en.removeAttribute("hidden");
+        btn.textContent = "Leer en español";
+        document.documentElement.lang = "en";
+      } else {
+        en.setAttribute("hidden", "");
+        es.removeAttribute("hidden");
+        btn.textContent = "Read in English";
+        document.documentElement.lang = "es";
+      }
+    });
+  </script>
+
+</body>
+</html>

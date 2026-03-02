@@ -1,0 +1,236 @@
+body{
+  margin:0;
+  background:#f1e5d0; 
+  font-family:"Cormorant Garamond", serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#lyrics{
+  max-width:900px;
+  padding:40px 24px;
+  text-align:center;
+
+  /* keeps the button neat at the bottom*/
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.lang{
+  width:100%;
+}
+
+p{
+  margin:14px 0;
+  font-size:44px;
+  line-height:2;
+  color:#000;
+}
+
+#lyrics span{
+  display:inline-block;
+  cursor:pointer;
+  transition: transform .25s ease, color .25s ease, opacity .25s ease;
+  transform-origin:center;
+}
+
+/* Animations/
+
+/* 1) volviste */
+.w-volviste:hover{
+  animation: spin360 .7s linear 1;
+}
+@keyframes spin360{
+  to { transform: rotate(360deg); }
+}
+
+/* 2) llevar */
+.w-llevar:hover{
+  animation: floatFade 2s ease forwards;
+  color:#9a7ed5;
+}
+@keyframes floatFade{
+  to{
+    transform: translateY(-40px);
+    opacity:0;
+  }
+}
+
+/* 3) llaves */
+.w-llaves{
+  position:relative;
+}
+
+/* 4) amor */
+.w-amor{
+  display:inline-block;
+  transition: transform .35s ease, color .25s ease, margin-left .35s ease;
+}
+
+.w-amor:hover{
+  color:#ff2aa6;
+  transform: scale(1.35);
+  margin-left:40px;
+}
+
+/* 5) Y aqui estoy de vuelta */
+.w-vuelta{
+  display:inline-block;
+  transform-origin:center;
+}
+
+.w-vuelta:hover{
+  animation: spinFull 2s linear 1;
+  color:#63b856;
+}
+
+@keyframes spinFull{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+}
+
+/* 6) encerrado */
+.w-encerrado:hover{
+  color:#e29116;
+  animation: shake .25s linear infinite;
+}
+@keyframes shake{
+  0%{ transform: translate(0,0) rotate(0deg); }
+  25%{ transform: translate(1px,-1px) rotate(-1deg); }
+  50%{ transform: translate(-1px,1px) rotate(1deg); }
+  75%{ transform: translate(1px,1px) rotate(0deg); }
+  100%{ transform: translate(0,0) rotate(-1deg); }
+}
+
+/* BALCON CANON DROP */
+
+.balcon span{
+  display:inline-block;
+  transition: transform .3s ease;
+}
+
+.balcon:hover span{
+  animation: dropWord 2s ease forwards;
+  color:#797523;
+}
+
+.balcon:hover span:nth-child(1){ animation-delay:0s; }
+.balcon:hover span:nth-child(2){ animation-delay:.08s; }
+.balcon:hover span:nth-child(3){ animation-delay:.16s; }
+.balcon:hover span:nth-child(4){ animation-delay:.24s; }
+.balcon:hover span:nth-child(5){ animation-delay:.32s; }
+.balcon:hover span:nth-child(6){ animation-delay:.40s; }
+
+@keyframes dropWord{
+  0%{
+    transform: translateY(0);
+    opacity:1;
+  }
+  100%{
+    transform: translateY(160px);
+    opacity:0;
+  }
+}
+
+/* WAVE */
+
+.wave span{
+  display:inline-block;
+}
+
+.wave:hover span{
+  animation: wave 1s ease-in-out infinite;
+}
+
+.wave:hover span:nth-child(1){animation-delay:0s;}
+.wave:hover span:nth-child(2){animation-delay:.1s;}
+.wave:hover span:nth-child(3){animation-delay:.2s;}
+.wave:hover span:nth-child(4){animation-delay:.3s;}
+.wave:hover span:nth-child(5){animation-delay:.4s;}
+.wave:hover span:nth-child(6){animation-delay:.5s;}
+.wave:hover span:nth-child(7){animation-delay:.6s;}
+.wave:hover span:nth-child(8){animation-delay:.7s;}
+
+@keyframes wave{
+  0%,100%{ transform: translateY(0); }
+  50%{ transform: translateY(-12px); }
+}
+
+/* TE AMO TE ODIO */
+
+.w-amo-odio{
+  display:inline-block;
+  transition: transform .45s ease, color .25s ease, margin .45s ease;
+}
+
+.w-amo-odio:hover{
+  color:red;
+  transform: scale(1.3);
+  margin-left:45px;
+  margin-right:45px;
+}
+
+/* POR PARTES IGUALES */
+
+.iguales{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.iguales span{
+  display:inline-block;
+  transition: transform .6s ease;
+}
+
+.iguales:hover .left{
+  transform: translateX(-120px);
+}
+
+.iguales:hover .right{
+  transform: translateX(120px);
+}
+
+.iguales:hover{
+  color:#20c6d2;
+}
+
+/*HERMOSOS*/
+
+.w-hermosos:hover{
+  animation: softPulse 1s ease-in-out infinite;
+  color:#c668d6;
+}
+
+@keyframes softPulse{
+  0%,100%{ transform: scale(1); }
+  50%{ transform: scale(1.12); }
+}
+
+/*  DESASTRES NATURALES*/
+
+.w-desastres:hover{
+  animation: fallDown 2s ease-in forwards;
+  color:#1d700f;
+}
+
+@keyframes fallDown{
+  0%{ transform: translateY(0) rotate(0deg); }
+  60%{ transform: translateY(50px) rotate(6deg); }
+  100%{ transform: translateY(140px) rotate(12deg); opacity:0; }
+}
+
+/* BUTTON */
+
+#toggleLang{
+  margin-top:32px;
+  padding:12px 18px;
+  font-family:"Cormorant Garamond", serif;
+  font-size:20px;
+  background:transparent;
+  border:1px solid black;
+  cursor:pointer;
+}
