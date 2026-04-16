@@ -1,0 +1,204 @@
+:root {
+  --cream: #f5f0e8;
+  --charcoal: #2a2420;
+  --rust: #ec61ca;
+  --warm-grey: #c8bfb0;
+  --light-grey: #ede8de;
+  --muted: #8a7d70;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  width: 100%;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 48px 80px 60px;
+  position: relative;
+}
+
+.image-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream);
+  overflow: hidden;
+}
+.image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  padding: 40px;
+
+}
+
+.btn-back {
+  position: absolute;
+  bottom: 32px;
+  left: 60px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--warm-grey);
+  background: transparent;
+  color: var(--muted);
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.btn-back:hover {
+  border-color: var(--charcoal);
+  color: var(--charcoal);
+}
+
+.label {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-family: 'Antic Didone', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Antic Didone', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--charcoal);
+  margin-bottom: 16px;
+}
+p:last-of-type { margin-bottom: 0; }
+
+.sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 12px;
+}
+
+.dialogue {
+  border-left: 2px solid var(--warm-grey);
+  padding: 10px 0 10px 16px;
+  margin: 12px 0;
+}
+.dialogue .who {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--rust);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.dialogue p { margin-bottom: 0; font-size: 1rem; }
+
+.story-list {
+  list-style: none;
+  margin: 12px 0;
+  padding-left: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.9;
+}
+.story-list li::before { content: '— '; color: var(--rust); }
+
+.poem {
+  font-family: 'Antic Didone', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.9;
+  margin: 16px 0;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.btn {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 11px 22px;
+  border-radius: 100px;
+  border: 1.5px solid var(--charcoal);
+  background: transparent;
+  color: var(--charcoal);
+  cursor: pointer;
+  transition: all 0.22s ease;
+  text-transform: lowercase;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover { background: var(--charcoal); color: var(--cream); }
+.btn.primary { background: var(--charcoal); color: var(--cream); }
+.btn.primary:hover { background: var(--rust); border-color: var(--rust); }
+
+body.dark { background: var(--charcoal); }
+body.dark p, body.dark h1, body.dark h2 { color: var(--cream); }
+body.dark .sub, body.dark .poem { color: var(--warm-grey); }
+body.dark .dialogue { border-color: #4a4038; }
+body.dark .btn { border-color: var(--warm-grey); color: var(--cream); }
+body.dark .btn:hover { background: var(--cream); color: var(--charcoal); }
+body.dark .btn-back { border-color: var(--warm-grey); color: var(--warm-grey); }
+
+@media (max-width: 700px) {
+  .page { grid-template-columns: 1fr; }
+  .image-col { min-height: 280px; }
+  .text-col { padding: 40px 28px 80px; }
+  .btn-back { left: 28px; }
+}
