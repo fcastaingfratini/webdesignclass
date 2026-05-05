@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paris — Explore · Alaire</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/wjj2blw.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .article-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .article-header {
+      padding: 64px 0 36px;
+      border-bottom: 1px solid #cfc9bf;
+    }
+
+    .article-header .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      opacity: 0.5;
+    }
+
+    .article-header .eyebrow a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .article-header .eyebrow a:hover { color: var(--pink); opacity: 1; }
+
+    .article-title {
+      font-family: "bacalar-regular", sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+
+    .article-intro {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 600px;
+      opacity: 0.65;
+      margin-bottom: 0;
+    }
+
+    .hero {
+      margin: 0;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.4;
+      padding: 52px 0 28px;
+      border-bottom: 1px solid #cfc9bf;
+      margin-bottom: 0;
+    }
+
+    .spot {
+      padding: 40px 0;
+      border-bottom: 1px solid #cfc9bf;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 0 48px;
+    }
+
+    .spot:last-child {
+      border-bottom: 1px solid #cfc9bf;
+    }
+
+    .spot-left {
+      padding-top: 4px;
+    }
+
+    .spot-name {
+      font-family: "bacalar-regular", sans-serif;
+      font-size: 22px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .spot-location {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.4;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .spot-desc {
+      font-size: 16px;
+      line-height: 1.85;
+      max-width: none;
+      margin-bottom: 0;
+    }
+
+    .photo-slot {
+      background: #ece9e3;
+      width: 100%;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0 0;
+    }
+
+    .photo-slot span {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.35;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .article-end {
+      padding: 80px 0;
+    }
+
+    @media (max-width: 640px) {
+      .article-wrap { padding: 0 20px; }
+      .spot { grid-template-columns: 1fr; gap: 12px; }
+      .hero img { height: 300px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="index.html">About</a>
+      <a href="writing.html">Writing</a>
+      <a href="cities.html">Cities</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="snailmail.html">Snail Mail</a>
+    </div>
+  </nav>
+
+  <div class="article-wrap">
+
+    <header class="article-header">
+      <p class="eyebrow"><a href="cities.html">Cities</a> &nbsp;/&nbsp; Paris</p>
+      <h1 class="article-title">Explore</h1>
+      <p class="article-intro">The bookshops, boutiques, and places to walk slowly. Paris reveals itself to the people who aren't in a rush. Like the Baudelaire militated, this is an invitation to be a <i>Flâneur</i>, to walk as a form of art, and a resistance to the frantic pace of consumerist life. </p>
+    </header>
+
+    <figure class="hero">
+      <img src="Paris/artParis.JPG" alt="Paris — Explore" />
+    </figure>
+
+    <!-- BOOKSHOPS -->
+    <p class="section-label">Bookshops</p>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">OFR.</p>
+        <p class="spot-location">3rd arr.<br>20 rue Dupetit-Thouars<br>Marais</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">OFR has been a fixture of the Marais creative scene since the mid-nineties — part bookshop, part gallery, part publisher, part lifestyle. The shelves hold art books, photography monographs, independent magazines, and OFR-exclusive zines you won't find elsewhere. There's a 60-square-metre gallery in the back that rotates exhibitions regularly. Don't take photos inside — there's a sign. Just browse slowly, and give yourself more time than you think you'll need. Also, the merch is super cute if you want to support a local librarie!</p>
+       <img src="paris/OFR.JPG" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Librairie Yvon Lambert</p>
+        <p class="spot-location">3rd arr.<br>Marais</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc"> Another one of my most favorite places in Paris, and it all begins with the people that run it. I had the pleasure to meet Monsieur Yvon Lambert, the bookshop is now run by his son and the fabulous staff, but, he still lingers on the stools of the library. If you see hiim, I invite you to chat with him, and ask as many questions as we can! An art bookshop in the Marais stocked with catalogues, artist monographs, and photography books you won't find anywhere else. Browsing here feels more like visiting a gallery than shopping — which is, of course, the whole idea. Allow an hour and leave lighter in pocket but considerably richer in everything else.</p>
+           <img src="paris/yvon.JPG" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 40%S; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <!-- SHOPS -->
+    <p class="section-label">Shops</p>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Merci</p>
+        <p class="spot-location">3rd arr.<br>111 bd Beaumarchais<br>Marais</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">A concept store that somehow avoids feeling like one — spread across a townhouse with a used-book basement café that's worth the visit on its own. The edit is thoughtful: French ceramics, Scandinavian linens, niche perfume, labels you'll want to know. Part of the proceeds go to charitable causes, which Merci manages to mention without making a fuss about. The café downstairs is a genuinely good place to sit and do nothing for an hour. Plus they openend a second store that's just as good! Check it out. Photo courtesy of Merci Paris.</p>
+        <img src="paris/merci.webp" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 20%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">L'Écritoire</p>
+        <p class="spot-location">3rd arr.<br>26 passage Molière<br>Marais</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">A family-run stationery shop tucked into a covered passage in the Marais, open since 1975 and now in its third generation. The shelves hold fountain pens, coloured inks, wax seals, handmade notebooks, and envelopes in every shape imaginable — things that make you want to write letters again. One of those shops that makes Paris feel like it's still protecting something worth protecting. Photo courtesy of L'Ecritoire via Instagram.</p>
+        <img src="paris/L'ecritoire.png" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 20%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <!-- PLACES -->
+    <p class="section-label">Places</p>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Place des Vosges</p>
+        <p class="spot-location">4th arr.<br>Marais</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">The oldest planned square in Paris, built in 1612, and still the most beautiful. The arcades are cool in summer, the proportions are perfect in every season, and the central garden — with its fountains and clipped linden trees — manages to feel both formal and completely relaxed. Come on a weekday when the school groups haven't arrived yet, sit on the grass, and try to remember why you ever thought you needed to be anywhere else.</p>
+         <img src="paris/placedesvosges.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 35%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="article-end"></div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© 2026 · Built slowly · Francine Castaing Fratini</p>
+    </div>
+  </footer>
+
+</body>
+</html>
