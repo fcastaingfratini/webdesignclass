@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paris — Eat & Drink · Alaire</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/wjj2blw.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ── Page shell ── */
+    .article-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* ── Top header ── */
+    .article-header {
+      padding: 64px 0 36px;
+      border-bottom: 1px solid #cfc9bf;
+    }
+
+    .article-header .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      opacity: 0.5;
+    }
+
+    .article-header .eyebrow a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .article-header .eyebrow a:hover { color: var(--pink); opacity: 1; }
+
+    .article-title {
+      font-family: "bacalar-regular", sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+
+    .article-intro {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 600px;
+      opacity: 0.65;
+      margin-bottom: 0;
+    }
+
+    /* ── Hero image ── */
+    .hero {
+      margin: 0;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* ── Section label ── */
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.4;
+      padding: 52px 0 28px;
+      border-bottom: 1px solid #cfc9bf;
+      margin-bottom: 0;
+    }
+
+    /* ── Spot entry ── */
+    .spot {
+      padding: 40px 0;
+      border-bottom: 1px solid #cfc9bf;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 0 48px;
+    }
+
+    .spot-left {
+      padding-top: 4px;
+    }
+
+    .spot-name {
+      font-family: "bacalar-regular", sans-serif;
+      font-size: 22px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .spot-location {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.4;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .spot-desc {
+      font-size: 16px;
+      line-height: 1.85;
+      max-width: none;
+      margin-bottom: 0;
+    }
+
+    /* ── Photo placeholder ── */
+    .photo-slot {
+      background: #ece9e3;
+      width: 100%;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0 0;
+    }
+
+    .photo-slot span {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.35;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* ── End spacer ── */
+    .article-end {
+      padding: 80px 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .article-wrap { padding: 0 20px; }
+      .spot {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .hero img { height: 300px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="index.html">About</a>
+      <a href="writing.html">Writing</a>
+      <a href="cities.html">Cities</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="snailmail.html">Snail Mail</a>
+    </div>
+  </nav>
+
+  <div class="article-wrap">
+
+    <!-- HEADER -->
+    <header class="article-header">
+      <p class="eyebrow"><a href="cities.html">Cities</a> &nbsp;/&nbsp; Paris</p>
+      <h1 class="article-title">Eat & Drink</h1>
+      <p class="article-intro">The cafés, restaurants, and places to linger. Paris rewards the people who keep coming back.</p>
+    </header>
+
+    <!-- HERO -->
+    <figure class="hero">
+      <img src="paris/eatdrinkparis.jpg" alt="Paris — Eat & Drink" />
+    </figure>
+
+    <!-- CAFÉS -->
+    <p class="section-label">Cafés</p>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Cortado</p>
+        <p class="spot-location">3rd arr.<br>31 rue Charlot<br>Marais</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">My most frequented spot during the whole time I lived in Paris, it deserved spot #1 on this list. A small piece of Spain tucked into the Marais, opened by three Spanish siblings who wanted Paris to know what a real cortado tasted like. The coffee comes from Nomad in Barcelona, the pan con tomate arrives with proper olive oil, and the soundtrack is as Latin as it can get, think Reggaeton, Tini, and oldschool classics (plus,their homage to Rosalia - iykyk). Come for the morning for a croissant with jamon serrano; stay through nightime to try their fantastic Vermú. </p>
+        <img src="paris/cortado.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Café Fika</p>
+        <p class="spot-location">3rd arr.<br>11 rue Payenne<br>Institut Suédois</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">Hidden inside the courtyard of the Swedish cultural institute — itself housed in a beautiful 17th-century hôtel particulier — Fika is the kind of café that feels like it belongs only to the people who know about it. Order a cardamom bun and a coffee, settle into the stone courtyard, and try not to think about your actual life. The small permanent exhibition upstairs is worth a look on the way in. Fika, in Swedish, means pausing to eat and drink in good company — the café earns the name. Also, if you go early enough and find a spot, this is the perfect place to lock in and have a good work sesh.</p>
+        <img src="paris/fika.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 80%;margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Café Berry</p>
+        <p class="spot-location">3rd arr.<br>10 rue Chapon<br>Marais</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">A brunch café in the Marais. Another one of my faves, if you visited me abroad, I probably dragged you here to have the Bun Egg with Bacon - seriously addicting it hits the spot. Come on a weekday morning when rue Chapon is still quiet, and take the outdoor terrace if the weather permits.</p>
+       <img src="paris/cafeberry.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 60%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">The Hoxton</p>
+        <p class="spot-location">2nd arr.<br>rue du Sentier<br>Sentier</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">Technically a hotel, but in practice one of the better places to spend a working morning in Paris. The galleried lobby of this 18th-century building — all velvet sofas, herringbone floors, and fast wifi — is open to non-guests, and no one will rush you out. Order something at Rivié, find a corner, order yourself a drink, and work away. The covered courtyard is especially good in spring, when the light comes in at an angle that makes everything feel like it's going well. This was my safe spot during finals szn when staying in my apartment felt wrong because the weather was finally amazing in Paris. Photo courtesy of palms and bricks in their hotel review.</p>
+       <img src="paris/hoxton.webp" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 60%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Off Campus</p>
+        <p class="spot-location">11th arr.<br>18 bd Voltaire<br>République</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">Opened in early 2025, Off Campus is a specialty café, independent bookshop, and evening lecture space all in one. It's run by two founders who believe adults should keep learning, and that a good flat white makes it easier. The book selection mirrors the evening course programme: geopolitics, philosophy, cinema, ecology. Laptops are allowed only at the communal table, technically for one hour — a rule that will either annoy you or remind you that not everything needs to be a coworking space. And they also have workshops, classes, events... Truly the best spot if you're a film and art lover like myself.</p>
+        <img src="paris/offcampus.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 80%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <!-- RESTAURANTS -->
+    <p class="section-label">Restaurants</p>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Sobremesa</p>
+        <p class="spot-location">18th arr.<br>127 rue Caulaincourt<br>Montmartre</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc"> My boyfriend visited me in February last year and I took him here for my Valentine's day plans. I've never had an experience like this one. Sobremesa is a natural wine bar in Montmartre with an amazing concept: every month, a new chef-in-residence takes over the kitchen and cooks whatever they want — the menu has gone Burmese, Spanish, Chinese, Congolese, and back again. This place feels like someone's living room, and the natural wine list from small producers is genuinely well chosen. I recommend ordering the full course menu that has smaller portions, but you get to try everything - which is the fun of this spot! No two visits are the same.</p>
+        <img src="paris/sobremesa.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 80%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Chop Chop Love</p>
+        <p class="spot-location">10th arr.<br>48 rue du Faubourg Saint-Martin<br>Strasbourg-Saint-Denis</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">In a small room with white stone walls and wooden décor in the 10th, the new creative scene of Paris has been gathering for years. Ismaël, Julien, and Ramy wanted to build something with love, sharing, and energy, and that's exactly what landed. The kitchen runs on short chef residencies, each bringing their own flavours: tajine kefta buns, homemade pasta, dishes that borrow from everywhere. The natural wine cellar is carefully curated. The vibe is everything, and they know it. Similar to Sobremesa, I went with my best friends and we tried a new cuisine! It felt like a fun activity and flavor class. Excited to go again on a different flavorful journey...</p>
+        <img src="paris/chopchoplove.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 40%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Dumbo</p>
+        <p class="spot-location">9th arr.<br>64 rue Jean-Baptiste Pigalle<br><br>10th arr.<br>14 rue des Petites-Écuries</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">There is nothing complicated about Dumbo, and that's exactly the point. A single smash burger — dry-aged beef, American cheese, onions, pickles, ketchup and mustard on a perfectly soft bun — cooked on a screaming hot plancha until the edges go crispy and the cheese melts into everything. The fries are fried twice and salted properly. The best burger in Paris, without an argument.</p>
+       <img src="paris/dumbo.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center 60%; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="article-end"></div>
+
+  </div><!-- /article-wrap -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <p>© 2026 · Built slowly · Francine Castaing Fratini</p>
+    </div>
+  </footer>
+
+</body>
+</html>

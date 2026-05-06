@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New York — Eat & Drink · Alaire</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/wjj2blw.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .article-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .article-header {
+      padding: 64px 0 36px;
+      border-bottom: 1px solid #cfc9bf;
+    }
+
+    .article-header .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      opacity: 0.5;
+    }
+
+    .article-header .eyebrow a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .article-header .eyebrow a:hover { color: var(--pink); opacity: 1; }
+
+    .article-title {
+      font-family: "bacalar-regular", sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+
+    .article-intro {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 600px;
+      opacity: 0.65;
+      margin-bottom: 0;
+    }
+
+    .hero {
+      margin: 0;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.4;
+      padding: 52px 0 28px;
+      border-bottom: 1px solid #cfc9bf;
+      margin-bottom: 0;
+    }
+
+    .spot {
+      padding: 40px 0;
+      border-bottom: 1px solid #cfc9bf;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 0 48px;
+    }
+
+    .spot-left {
+      padding-top: 4px;
+    }
+
+    .spot-name {
+      font-family: "bacalar-regular", sans-serif;
+      font-size: 22px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .spot-location {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.4;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .spot-desc {
+      font-size: 16px;
+      line-height: 1.85;
+      max-width: none;
+      margin-bottom: 0;
+    }
+
+    .photo-slot {
+      background: #ece9e3;
+      width: 100%;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0 0;
+    }
+
+    .photo-slot span {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.35;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .article-end {
+      padding: 80px 0;
+    }
+
+    @media (max-width: 640px) {
+      .article-wrap { padding: 0 20px; }
+      .spot {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .hero img { height: 300px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="index.html">About</a>
+      <a href="writing.html">Writing</a>
+      <a href="cities.html">Cities</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="snailmail.html">Snail Mail</a>
+    </div>
+  </nav>
+
+  <div class="article-wrap">
+
+    <!-- HEADER -->
+    <header class="article-header">
+      <p class="eyebrow"><a href="cities.html">Cities</a> &nbsp;/&nbsp; New York</p>
+      <h1 class="article-title">Eat & Drink</h1>
+      <p class="article-intro">Everyone says it, and it's true. You can find anything you can think of in New York. From street food to fine dining, NYC has any and everything in between. Here are some of my favorites. </p>
+    </header>
+
+    <!-- HERO -->
+    <figure class="hero">
+      <img src="nyc/nychero.jpg" alt="New York — Eat & Drink" />
+    </figure>
+
+    <!-- CAFÉS -->
+    <p class="section-label">Cafés</p>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Partners Coffee</p>
+        <p class="spot-location">Long Island City<br>26-25 Jackson Ave</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">Parterns has a few locations across the city,this is just the one closest to me, and I love it. It has a back patio that opens when the weather gets nice, and you can work on your computer under the umbrellas. Their coffee is just infallible. I love buying my grounds from here and trying all their different varieties. Plus I love how conscious they are about their beans and where they come from, they're always showcasing the people working on the coffee sites, promoting honesty that I value a lot.</p>
+        <img src="nyc/partners.png" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Atelier Jolie</p>
+        <p class="spot-location">NoHo<br>57 Great Jones St</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">Atelier Jolie’s café, run by Eat Offbeat, feels really calm and lowkey, but with a lot going on behind it. It’s not just a coffee spot, it’s a mix of different cultures and stories coming together through food. The menu pulls from homemade recipes from places like Syria, Sri Lanka, Morocco, and Venezuela, so everything feels personal and a little unexpected, not your usual café lineup. Plus there's an art gallery and tons of books if you want to get inspired.</p>
+        <img src="nyc/atelierjolie.webp" alt="" style="width:100%; height:320px; object-fit:cover; object-position:bottom; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">La Cabra</p>
+        <p class="spot-location">SoHo<br>284 Lafayette St, New York, NY 10012</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">La Cabra is kind of a classic at this point, and it’s hyped for a reason. The space is super minimal and calm, really clean lines, lots of light, everything feels intentional without trying too hard. The coffee is great, but honestly the matcha and the cardamom bun are so good.</p>
+        <img src="nyc/lacabra.jpg" alt="" style="width:100%; height:320px; object-fit:cover; object-position:center; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <!-- RESTAURANTS -->
+    <p class="section-label">Restaurants</p>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Match 65 Brasserie</p>
+        <p class="spot-location">Upper East Side<br>29 E 65th St, New York, NY 10065</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">This is a NYC classic for me and my family. Cozy interiors that still feel luxe, one of the best french foods in the city, and easy to get a rec! No gatekeeping here. This is a true neighborhood gem.</p>
+        <img src="nyc/match.png" alt="" style="width:110%; height:320px; object-fit:cover; object-position:center; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Friend of a Farmer </p>
+        <p class="spot-location">Upper West Side<br>68 W 71st St, New York, NY 10023</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">Every time I'm craving cozy food, especially in the winter, I think of Friend of a Farmer. Fresh ingredients, classic american cuisine. It feels like stepping away from the chaos of a city like NY and stepping into a local countryside restaurant.</p>
+       <img src="nyc/friend.jpg" alt="" style="width:110%; height:320px; object-fit:cover; object-position:center; margin-top:40px; display:block;" />
+      </div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-left">
+        <p class="spot-name">Lilia</p>
+        <p class="spot-location">Brooklyn<br>567 Union Ave, Brooklyn, NY 11211</p>
+      </div>
+      <div class="spot-right">
+        <p class="spot-desc">Not going to lie... it was a little difficult to get a reservation here, nothing crazy, but it's not a place you would impromptu go with a group of 5 on a friday night. That said, when I went, we did do a walk in at the bar and had the best fresh pasta and appetizers. Italian is always good, but excellent italian is hard to find.</p>
+       <img src="nyc/lilia.png" alt="" style="width:100%; height:320px; object-fit:cover; object-position:top; margin-top:40px; display:block;" />
+    </div>
+
+    <div class="article-end"></div>
+
+  </div><!-- /article-wrap -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <p>© 2026 · Built slowly · Francine Castaing Fratini</p>
+    </div>
+  </footer>
+
+</body>
+</html>
